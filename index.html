@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeGoChem Intelligent Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                yellow: '#FFE01B', // WeGoChem Yellow
+                black: '#2D2D2D', // PostHog Text Black
+                gray: '#403B3B',
+                light: '#F3F2EF', // PostHog Paper Background
+              },
+              ph: {
+                orange: '#F54E00',
+                blue: '#1D4AFF',
+                tan: '#F3F2EF',
+                border: '#DADADA',
+              }
+            },
+            boxShadow: {
+              'ph': '0 2px 0 0 rgba(0,0,0,0.05)',
+              'ph-hover': '0 4px 0 0 rgba(0,0,0,0.05)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #F3F2EF;
+        color: #2D2D2D;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D1D5DB; 
+        border-radius: 5px;
+        border: 2px solid #F3F2EF;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9CA3AF; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "uuid": "https://esm.sh/uuid@^13.0.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "sql.js": "https://esm.sh/sql.js@1.10.3",
+    "localforage": "https://esm.sh/localforage@1.10.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

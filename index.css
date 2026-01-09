@@ -1,0 +1,13 @@
+/* Tailwind directives injected via CDN in HTML, 
+   but this file is kept for custom overrides if needed in future */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-in {
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
